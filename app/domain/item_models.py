@@ -1,8 +1,6 @@
 from app import db, engine
-from sqlalchemy import Table, Column, Integer, ForeignKey, create_engine
-from sqlalchemy.orm import relationship
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
+
 
 class BaseItem(db.Model):
     __table_args__ = {"schema": "d2platform"}
@@ -39,19 +37,3 @@ class Item(db.Model):
 
 Session = sessionmaker(bind=engine)
 session = Session()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

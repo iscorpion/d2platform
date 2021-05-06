@@ -1,16 +1,12 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from ddtrace import patch_all
 from sqlalchemy import create_engine
 
 db = SQLAlchemy()
 engine = None
 
-# patch_all()
-
 
 def create_app():
-    print("FUck this shit")
     app = Flask(__name__, instance_relative_config=False)
     app.config.from_object('config.Config')
 

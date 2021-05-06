@@ -72,6 +72,19 @@ values
     'http://classic.battle.net/images/battle/diablo2exp/images/items/armor/quilted.gif',
     false);
 
+INSERT INTO d2platform.base_items
+    (name,
+    type,
+    player_class,
+    item_class,
+    stats,
+    icon,
+    is_ethereal )
+values
+    ('Death Mask', 'Helms', null, 'Exceptional', '{"defense":"54-86","level requirement":"25", "strength":"55"}',
+    'http://classic.battle.net/images/battle/diablo2exp/images/items/armor/mask.gif',
+    false);
+
 INSERT INTO d2platform.items
     (name,
     base_id,
@@ -94,3 +107,40 @@ values
     ('The Spirit Shroud', 2, 'Unique', '+150% Enhanced Defense\nCannot Be Frozen\n+1 To All Skills\nReplenish Life +10\nMagic Damage Reduced By 7-11', null,
     'http://classic.battle.net/diablo2exp/images/items/armor/quilted.gif');
 
+
+
+INSERT INTO d2platform.items
+    (name,
+    base_id,
+    rarity ,
+    affixes ,
+    set_name,
+    icon)
+values
+    ('Blackhorn''s Face', 3, 'Unique',
+	'+180-220% Enhanced Defense (varies)
+	Slows Target By 20%
+	Attacker Takes Lightning Damage of 25
+	Prevent Monster Heal
+	+20 Lightning Absorb
+	Lightning Resist +15%',
+	null,
+    'http://classic.battle.net/images/battle/diablo2exp/images/items/armor/mask.gif');
+
+INSERT INTO d2platform.items
+    (name,
+    base_id,
+    rarity ,
+    affixes ,
+    set_name,
+    icon)
+values
+    ('Tal Rasha''s Horadric Crest', 3, 'Set',
+	'10% Life Stolen Per Hit
+	10% Mana Stolen Per Hit
+	All Resistances +15
+	+45 Defense
+	+30 To Mana
+	+60 To Life',
+	'Tal Rasha''s Wrappings',
+    'http://classic.battle.net/images/battle/diablo2exp/images/items/armor/mask.gif');
